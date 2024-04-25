@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Morpho Blue Position for osETH/WETH</title>
+    </head>
+    <body>
+        <h1>Morpho Blue Position for osETH/WETH</h1>
+        <label for="input-el">Retrieve position for this address:</label>
+        <input type="text" id="input-el">
+        <div id="button-div">
+            <button class="buttons" id="update-btn">Update Position</button>
+            <button class="buttons" id="save-btn">Save Default Address</button>
+        </div>
+        <label>Morpho Blue position:-</label>
+        <div id="balances">
+            <div class="balance">
+                <div class="bal-label">Total Borrow Assets:</div>
+                <div class="bal-value" id="total-borrow-assets"></div>
+            </div>
+            <div class="balance">
+                <div class="bal-label">Total Borrow Shares:</div>
+                <div class="bal-value" id="total-borrow-shares"></div>
+            </div>
+              <div class="balance">
+                <div class="bal-label">Position Borrow Shares:</div>
+                <div class="bal-value" id="position-borrow-shares"></div>
+            </div>
+            <div class="balance">
+                <div class="bal-label">Position Collateral:</div>
+                <div class="bal-value" id="position-collateral"></div>
+            </div>
+            <div class="balance">
+                <div class="bal-label">Position Assets Borrowed:</div>
+                <div class="bal-value" id="position-borrow-assets"></div>
+            </div>
+        </div>
+        <script type="module" src="/index.js"></script>    
+    </body>
+</html>
